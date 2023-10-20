@@ -203,7 +203,7 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -220,14 +220,28 @@ svg {
   position: absolute;
   top: 24px;
   right: 24px;
-
   cursor: pointer;
-  border-radius: 50%;
-  border-color: rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 100%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--OCEAN);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.data-modal-btn:hover {
+  fill: currentColor;
+  border: 1px solid currentColor;
 }
 
 .is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
