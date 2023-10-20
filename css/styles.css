@@ -425,6 +425,10 @@ svg {
   background: var(--OCEAN);
 }
 
+.svg-icons-container .svg-icon-div:hover {
+  background-color: var(--IRIS);
+}
+
 .svg-icons-container .svg-icon-div .svg-icon-anchor {
   fill: var(--CLOUD);
 
