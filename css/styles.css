@@ -246,7 +246,7 @@ svg {
   pointer-events: none;
 }
 
-/* .data-modal .message {
+.modal-text-header {
   margin: 72px 24px 16px;
 
   color: var(--NAVY-BLUE, #2e2f42);
@@ -256,7 +256,15 @@ svg {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
-} */
+}
+
+.frm-login {
+  display: block;
+  justify-content: flex-start;
+
+  margin: 0;
+  padding: 0;
+}
 
 /* Section Article */
 .section-article ul {

@@ -79,14 +79,55 @@
               <svg width="18" height="18">
                 <use href="./images/icons.svg#close" />
               </svg>
-              
             </button>
-            <div class="box">
-<div class="message">
-              <p>Leave your contacts and we will call you back</p>
-            </div>
-            </div>
-            
+
+            <p class="modal-text-header">
+              Leave your contacts and we will call you back
+            </p>
+            <form class="frm-login" id="frm-register" action="" method="">
+              <label for="lbl-fullname"
+                ><span class="frm-span-text">Name</span>
+                <input type="text" id="id-fullname" name="fullname" />
+                <svg class="frm-icon" width="18" height="18">
+                  <use href="./images/icons.svg#person" />
+                </svg>
+              </label>
+
+              <label for="lbl-phone"
+                ><span class="frm-span-text">Phone</span>
+                <input type="tel" id="id-phone" name="phone" />
+                <svg class="frm-icon" width="18" height="18">
+                  <use href="./images/icons.svg#phone" />
+                </svg>
+              </label>
+
+              <label for="lbl-email"
+                ><span class="frm-span-text">Email</span>
+                <input type="email" id="id-email" name="email" />
+                <svg class="frm-icon" width="18" height="18">
+                  <use href="./images/icons.svg#email" />
+                </svg>
+              </label>
+
+              <label for="lbl-comment"
+                ><span class="frm-span-text">Comment</span>
+                <textarea
+                  name="text-area"
+                  id="id-textarea"
+                  cols="30"
+                  rows="10"
+                  placeholder="Text input"
+                ></textarea>
+              </label>
+
+              <label for="lbl-checkbox">
+                <input type="checkbox" id="id-chkbox-policy" name="policy" />
+                I accept the terms and conditions of the
+                <a href="#">Privacy Policy</a>
+              </label>
+
+              <button type="submit" name="btn-submit">Send</button>
+            </form>
           </div>
         </div>
       </section>
