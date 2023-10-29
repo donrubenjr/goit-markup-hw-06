@@ -17,9 +17,9 @@
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <html lang="en">
-  <!-- Header Section -->
+  <!-- ----- Header Section ----- -->
   <header class="container header-container">
-    <!-- Navigation Bar -->
+    <!-- ----- Navigation Bar ----- -->
     <nav class="nav-container">
       <div class="div-logo-container">
         <a class="nav-container logo" href="/index.html"
@@ -70,8 +70,8 @@
         <button class="port-btn-label">Marketing</button>
       </div>
 
-      <!-- Images Section -->
-      <!-- Row 1 -->
+      <!-- ----- Images Section ----- -->
+      <!-- ----- Row 1 ----- -->
       <section class="port-rows row-one">
         <ul>
           <li class="port-card-list">
@@ -140,7 +140,7 @@
         </ul>
       </section>
 
-      <!-- Row 2 -->
+      <!-- ----- Row 2 ----- -->
       <section class="port-rows row-two">
         <ul>
           <li class="port-card-list">
@@ -209,7 +209,7 @@
         </ul>
       </section>
 
-      <!-- Row 3 -->
+      <!-- ----- Row 3 ----- -->
       <section class="port-rows row-three">
         <ul>
           <li class="port-card-list">
@@ -279,7 +279,7 @@
       </section>
     </main>
 
-    <!-- Footer section -->
+    <!-- ----- Footer section ----- -->
     <footer class="container footer-container">
       <div class="container-logo-text">
         <div class="logo-container">
@@ -337,6 +337,35 @@
             </a>
           </div>
         </div>
+      </div>
+
+      <div class="subscribe-form-container">
+        <form class="subscribe-form" action="">
+          <label class="subscription-label" for="subscribe"
+            ><span class="subscription-text text-label">Subscribe</span>
+            <input
+              class="subscription-input"
+              type="email"
+              id="id_email_add"
+              name="name_email_add"
+              placeholder="E-mail"
+              required
+            />
+          </label>
+          <div class="submit-button-container">
+            <svg class="subscribe-icon">
+              <use href="./images/icons.svg#send" />
+            </svg>
+            <button
+              class="footer-button-submit"
+              type="submit"
+              id="id_subscription"
+              name="name_subscription"
+            >
+              <span class="subscription-text text-button">Subscribe</span>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>

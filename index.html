@@ -68,11 +68,9 @@
           Effective Solutions <br />
           for Your Business
         </h1>
-
         <button type="button" class="hero-btn" data-modal-open>
           Order Service
         </button>
-
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button type="button" class="data-modal-btn" data-modal-close>
@@ -80,67 +78,80 @@
                 <use href="./images/icons.svg#close" />
               </svg>
             </button>
-
             <p class="modal-text-header">
               Leave your contacts and we will call you back
             </p>
-            <form class="frm-login" id="frm-register" action="" method="">
-              <label for="lbl-fullname"
+            <form
+              class="signup-form"
+              id="id_signup_form"
+              autocomplete="on"
+              action=""
+              method=""
+            >
+              <label for="label_fullname"
                 ><span class="frm-span-text">Name</span>
                 <input
                   class="input-text"
                   type="text"
-                  id="id-fullname"
-                  name="fullname"
+                  id="id_fullname"
+                  name="name_fullname"
+                  required
                 />
                 <svg class="frm-icon">
                   <use href="./images/icons.svg#person" />
                 </svg>
               </label>
-
-              <label for="lbl-phone"
+              <label for="label_phone"
                 ><span class="frm-span-text">Phone</span>
                 <input
                   class="input-text"
                   type="tel"
-                  id="id-phone"
-                  name="phone"
+                  id="id_phone"
+                  name="name_phone"
+                  required
                 />
                 <svg class="frm-icon">
                   <use href="./images/icons.svg#phone" />
                 </svg>
               </label>
-
-              <label for="lbl-email"
+              <label for="label_email"
                 ><span class="frm-span-text">Email</span>
                 <input
                   class="input-text"
                   type="email"
-                  id="id-email"
-                  name="email"
+                  id="id_email"
+                  name="name_email"
+                  required
                 />
                 <svg class="frm-icon">
                   <use href="./images/icons.svg#email" />
                 </svg>
               </label>
-
-              <label for="lbl-comment"
+              <label for="label_comment"
                 ><span class="span-textarea">Comment</span>
                 <textarea
-                  class="input-textarea"
-                  name="text-area"
-                  id="id-textarea"
+                  class="input-text"
+                  id="id_textarea"
+                  name="name_textarea"
                   rows="8"
                   placeholder="Text input"
                 ></textarea>
               </label>
-
-              <label for="lbl-checkbox">
-                <input type="checkbox" id="id-chkbox-policy" name="policy" />
-                I accept the terms and conditions of the
-                <a href="#">Privacy Policy</a>
+              <label for="label-chkbox-policy" class="label-chkbox-policy">
+                <input
+                  class="chkbox-policy visually-hidden"
+                  type="checkbox"
+                  id="id_policy"
+                  name="name_policy"
+                />
+                <svg class="icon-for-chkbox">
+                  <use href="./images/icons.svg#checkbox" />
+                </svg>
+                <span class="chkbox-policy-text">
+                  I accept the terms and conditions of the
+                  <a href="#">Privacy Policy</a>
+                </span>
               </label>
-
               <button class="hero-btn" type="submit" name="btn-submit">
                 Send
               </button>
@@ -551,6 +562,35 @@
             </a>
           </div>
         </div>
+      </div>
+
+      <div class="subscribe-form-container">
+        <form class="subscribe-form" action="">
+          <label class="subscription-label" for="subscribe"
+            ><span class="subscription-text text-label">Subscribe</span>
+            <input
+              class="subscription-input"
+              type="email"
+              id="id_email_add"
+              name="name_email_add"
+              placeholder="E-mail"
+              required
+            />
+          </label>
+          <div class="submit-button-container">
+            <svg class="subscribe-icon">
+              <use href="./images/icons.svg#send" />
+            </svg>
+            <button
+              class="footer-button-submit"
+              type="submit"
+              id="id_subscription"
+              name="name_subscription"
+            >
+              <span class="subscription-text text-button">Subscribe</span>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 

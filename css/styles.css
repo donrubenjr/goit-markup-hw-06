@@ -35,7 +35,7 @@ svg {
   margin: 0;
 }
 
-/* Removing the <ul> default padding */
+/* ----- Removing the <ul> default padding ----- */
 .header-menu,
 .contact-menu,
 .article-unorder-list,
@@ -50,7 +50,7 @@ svg {
   margin-right: auto;
 }
 
-/* Header/Navigation Section */
+/* ----- Header/Navigation Section ----- */
 .header-container {
   position: sticky;
   top: 0;
@@ -129,7 +129,7 @@ svg {
   background-color: var(--IRIS);
 }
 
-/* Contacts Section */
+/* ----- Contacts Section ----- */
 .div-contact-menu {
   display: flex;
   align-items: center;
@@ -149,8 +149,8 @@ svg {
   letter-spacing: 0.32px;
 }
 
-/* <index.html> */
-/* Hero Section */
+/* ----- <index.html> ----- */
+/* ----- Hero Section ----- */
 .hero-section {
   padding-top: 188px;
   padding-bottom: 188px;
@@ -183,7 +183,7 @@ svg {
     background: var(--IRIS);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-    color: var(--WHITE, #fff);
+    color: var(--WHITE);
     font-family: Roboto;
     font-weight: 500;
     line-height: 24px;
@@ -191,7 +191,7 @@ svg {
   }
 }
 
-/* Data Modal */
+/* ----- Data Modal ----- */
 .backdrop {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -248,22 +248,33 @@ svg {
 
 .modal-text-header {
   margin: 72px 24px 16px;
-
-  color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
 
+  color: var(--NAVY-BLUE);
   font-family: Roboto;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
 
-.frm-login {
+/* ----- Service Form ----- */
+.signup-form {
   display: block;
   justify-content: flex-start;
 
   margin: 0px 24px 16px;
   padding: 0;
+}
+
+.frm-icon {
+  position: absolute;
+  top: 26px;
+  left: 16px;
+
+  width: 18px;
+  height: 24px;
+  fill: var(--NAVY-BLUE);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 label {
@@ -281,23 +292,94 @@ label {
 }
 
 .input-text {
-  width: 360px;
+  width: 100%;
   height: 40px;
-
   padding-left: 38px;
   margin-top: 4px;
+
+  outline: none;
+  border: 1px solid var(--NAVY-BLUE);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--LIGHT-SLATE);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.48px;
 }
 
-.frm-icon {
+label > textarea {
+  resize: none;
+  height: 120px !important;
+  padding: 8px 8px 8px 16px !important;
+  text-align: justify;
+
+  color: var(--NAVY-BLUE, rgba(46, 47, 66, 0.4));
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+}
+
+.label-chkbox-policy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.chkbox-policy {
+  cursor: pointer;
+}
+
+.icon-for-chkbox {
+  width: 22px;
+  height: 22px;
+
+  fill: var(--WHITE);
+  border-radius: 2px;
+  border: 1px solid var(--LIGHT-SLATE);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chkbox-policy-text {
+  padding-left: 4px;
+}
+
+form > button {
+  padding: 12px 50px !important;
+}
+
+.input-text:hover,
+.input-text:focus {
+  border: 1px solid var(--IRIS);
+  border-radius: 4px;
+}
+
+.input-text:hover + .frm-icon,
+.input-text:focus + .frm-icon {
+  fill: var(--IRIS);
+}
+
+.chkbox-policy:checked {
+  background-color: var(--IRIS);
+}
+
+.chkbox-policy:checked + .icon-for-chkbox {
+  border-color: var(--IRIS);
+  background-color: var(--IRIS);
+}
+
+.visually-hidden {
   position: absolute;
-  top: 28px;
-  left: 16px;
-
-  width: 18px;
-  height: 24px;
+  border: 0;
+  opacity: 0;
 }
 
-/* Section Article */
+/* ----- Section Article ----- */
 .section-article ul {
   margin-left: 156px;
   margin-right: 156px;
@@ -363,7 +445,7 @@ label {
   stroke: var(--IRIS);
 }
 
-/* Section Gadget */
+/* ----- Section Gadget ----- */
 .section-gadget h2 {
   color: var(--NAVY-BLUE);
   text-align: center;
@@ -385,7 +467,7 @@ label {
   list-style: none;
 }
 
-/* Section Team */
+/* ----- Section Team ----- */
 .section-team {
   background-color: var(--CLOUD);
   padding-bottom: 120px;
@@ -480,7 +562,7 @@ label {
   gap: 24px;
 }
 
-/* Customer Section */
+/* ----- Customer Section ----- */
 .customers {
   background-color: var(--WHITE);
 
@@ -529,8 +611,8 @@ label {
   }
 }
 
-/* <porfolio.html> */
-/* Buttons Container */
+/* ----- <porfolio.html> ----- */
+/* ----- Buttons Container ----- */
 .port-btn {
   display: flex;
   justify-content: center;
@@ -565,7 +647,7 @@ label {
   }
 }
 
-/* Sections Container */
+/* ----- Sections Container ----- */
 .port-rows {
   display: flex;
   justify-content: center;
@@ -666,7 +748,7 @@ label {
   }
 }
 
-/*Footer Section */
+/* ----- Footer Section ----- */
 footer {
   background-color: var(--NAVY-BLUE);
   height: 312px;
@@ -734,4 +816,103 @@ footer {
 
   margin-top: 16px;
   padding: 0;
+}
+
+/* ----- Subscribe Form ----- */
+.subscribe-form-container {
+  margin-left: 80px;
+  width: 453px;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+  margin-top: 100px;
+}
+
+.subscription-label {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subscription-text {
+  color: var(--WHITE);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.subscription-input {
+  padding-left: 16px;
+  width: 264px;
+  height: 40px;
+
+  color: var(--LIGHT-SLATE);
+  background-color: transparent;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid var(--WHITE);
+  background-color: var(--NAVY-BLUE);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-input:hover,
+.subscription-input:focus {
+  border: 1px solid var(--OCEAN);
+}
+
+.subscription-input:focus {
+  color: var(--WHITE);
+  font-size: 14px;
+}
+
+.submit-button-container {
+  position: relative;
+  width: 100%;
+}
+
+.footer-button-submit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+  padding: 8px 0px 8px 24px;
+  margin-top: 40px;
+  max-height: 40px;
+
+  cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+  background: var(--IRIS);
+  color: var(--WHITE);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-icon {
+  position: absolute;
+  top: 44px;
+  right: 24px;
+
+  fill: var(--WHITE);
+  width: 24px;
+  height: 24px;
 }
